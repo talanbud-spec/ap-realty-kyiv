@@ -4,10 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP Realty Kyiv - Оренда та продаж нерухомості</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app"></div>
-    <script src="app.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">AP Realty Kyiv</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#articles">Статті</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Оренда та продаж нерухомості в Києві</h1>
+            <p>Професійне агентство з 13 років досвіду</p>
+            <button class="btn">Переглянути каталог</button>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2>Каталог нерухомості</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Офіс в БЦ "Парус"</h3>
+                    <p>Площа: 150 м²</p>
+                    <p class="price">₴15,000/місяць</p>
+                </div>
+                <div class="property-card">
+                    <div class="property-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Офіс в БЦ "Форум"</h3>
+                    <p>Площа: 200 м²</p>
+                    <p class="price">₴20,000/місяць</p>
+                </div>
+                <div class="property-card">
+                    <div class="property-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Офіс в БЦ "Альянс"</h3>
+                    <p>Площа: 180 м²</p>
+                    <p class="price">₴18,000/місяць</p>
+                </div>
+                <div class="property-card">
+                    <div class="property-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <h3>Офіс в БЦ "Статус"</h3>
+                    <p>Площа: 120 м²</p>
+                    <p class="price">₴12,000/місяць</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>Корисні статті</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <h3>Як вибрати офіс для стартапу</h3>
+                    <p>Практичні поради щодо вибору офісного простору для молодої компанії...</p>
+                    <a href="#">Читати далі →</a>
+                </article>
+                <article class="article-card">
+                    <h3>Тренди на ринку комерційної нерухомості</h3>
+                    <p>Аналіз сучасних тенденцій в секторі комерційної нерухомості Києва...</p>
+                    <a href="#">Читати далі →</a>
+                </article>
+                <article class="article-card">
+                    <h3>Юридичні аспекти оренди офісу</h3>
+                    <p>Все, що потрібно знати про юридичні питання при оренді офісного простору...</p>
+                    <a href="#">Читати далі →</a>
+                </article>
+                <article class="article-card">
+                    <h3>Як розрахувати вартість оренди</h3>
+                    <p>Детальний розрахунок вартості оренди офісу з урахуванням усіх факторів...</p>
+                    <a href="#">Читати далі →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Відгуки клієнтів</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">"Дуже задоволений послугами! Знайшли ідеальний офіс за тиждень."</p>
+                    <p class="review-author">— Іван Петренко, CEO StartupXYZ</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Професійний підхід, швидке вирішення всіх питань. Рекомендую!"</p>
+                    <p class="review-author">— Марія Коваленко, Директор ТОВ "Інновація"</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Найкращий ріелтор в Києві! Допоміг знайти офіс мрії."</p>
+                    <p class="review-author">— Сергій Бондаренко, Засновник WebAgency</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Чудова робота! Все було швидко, прозоро та без проблем."</p>
+                    <p class="review-author">— Олена Шевченко, Менеджер ФОП</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Дякую за допомогу в пошуку комерційного простору!"</p>
+                    <p class="review-author">— Андрій Гавриленко, Власник магазину</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Найкращий вибір! Все вийшло навіть краще, ніж очікував."</p>
+                    <p class="review-author">— Юлія Романенко, Директор IT-компанії</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Зв'яжіться з нами</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="email" placeholder="Ваша пошта" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <textarea placeholder="Ваше повідомлення" rows="5" required></textarea>
+                    <button type="submit" class="btn">Відправити</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Контактна інформація</h3>
+                    <p><strong>Телефон:</strong> +380 (44) 123-45-67</p>
+                    <p><strong>Email:</strong> info@aprealty.kyiv</p>
+                    <p><strong>Адреса:</strong> вул. Хрещатик, 1, Київ</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AP Realty Kyiv. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
