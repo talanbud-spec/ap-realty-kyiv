@@ -25,6 +25,12 @@ header {
     z-index: 100;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -57,7 +63,7 @@ header {
 .hero {
     background: linear-gradient(135deg, #001f4d 0%, #003d7a 100%);
     color: white;
-    padding: 6rem 0;
+    padding: 8rem 0;
     text-align: center;
 }
 
@@ -68,8 +74,13 @@ header {
 
 .hero p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #ffd700;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #ddd;
 }
 
 .btn {
@@ -100,47 +111,8 @@ section h2 {
     color: #001f4d;
 }
 
-.catalog {
-    background: #f9f9f9;
-}
-
-.properties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.property-card {
+.articles {
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.property-card:hover {
-    transform: translateY(-5px);
-}
-
-.property-image {
-    height: 200px;
-}
-
-.property-card h3 {
-    padding: 1rem;
-    color: #001f4d;
-}
-
-.property-card p {
-    padding: 0 1rem;
-    color: #666;
-}
-
-.price {
-    padding: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #ffd700;
 }
 
 .articles-grid {
@@ -154,22 +126,36 @@ section h2 {
     padding: 2rem;
     border-radius: 8px;
     border-left: 4px solid #ffd700;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .article-card:hover {
-    transform: translateX(5px);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .article-card h3 {
     color: #001f4d;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.article-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .article-card a {
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.article-card a:hover {
+    color: #e6c200;
 }
 
 .reviews {
@@ -187,17 +173,28 @@ section h2 {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
 }
 
 .review-text {
     font-style: italic;
     color: #333;
     margin-bottom: 1rem;
+    line-height: 1.8;
 }
 
 .review-author {
     color: #001f4d;
     font-weight: bold;
+    font-style: normal;
+}
+
+.contact {
+    background: white;
 }
 
 .contact-content {
@@ -218,6 +215,14 @@ section h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
 }
 
 .contact-info h3 {
@@ -227,6 +232,7 @@ section h2 {
 
 .contact-info p {
     margin-bottom: 0.5rem;
+    color: #333;
 }
 
 .social-links {
@@ -260,10 +266,15 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         gap: 1rem;
+        font-size: 0.9rem;
     }
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .contact-content {
@@ -272,5 +283,10 @@ footer {
 
     section h2 {
         font-size: 2rem;
+    }
+
+    .articles-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
     }
 }
